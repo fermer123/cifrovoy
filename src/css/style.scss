@@ -1,5 +1,13 @@
+@import 'gilroy.scss';
+@import '~normalize.css';
 .app {
   display: block;
+  font-family: Gilroy;
+  font-size: 64px;
+  line-height: 74px;
+  /* or 116% */
+
+  letter-spacing: 0.04em;
   content: '';
   padding: 30px;
   width: 200px;
