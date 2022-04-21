@@ -5,11 +5,11 @@ const path = require('path');
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
-  entry: './index.js',
+  entry: './main.js',
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: 'images/[hash][ext]',
+    assetModuleFilename: 'images/[hash][ext][query]',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -24,7 +24,11 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(svg|jpg|png)$/,
+        test: /\.html$/i,
+        use: ['html-loader'],
+      },
+      {
+        test: /\.(svg|jpg|png)$/i,
         type: 'asset/resource',
       },
       {

@@ -1,9 +1,12 @@
-@import 'gilroy.scss';
 @import '~normalize.css';
+@import 'gilroy.scss';
 
-.app {
-  min-height: 100vh;
-  background-image: url('../assets/img/header-min.png');
-  background-size: cover;
+// .header_wrapper {
+//   margin: 0 auto;
+//   max-width: 1200px;
+// }
+.header_logo {
+  background: url('../assets/img/logo-min.png') no-repeat left;
   width: 200px;
+  height: 100px;
 }
