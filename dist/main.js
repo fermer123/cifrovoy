@@ -146,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css
   \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"b4afd2c1a5c8513ce721.otf\";\n\n//# sourceURL=webpack:///./assets/fonts/Gilroy-Light.otf?");
+eval("module.exports = __webpack_require__.p + \"images/b4afd2c1a5c8513ce721.otf\";\n\n//# sourceURL=webpack:///./assets/fonts/Gilroy-Light.otf?");
 
 /***/ }),
 
@@ -156,7 +156,7 @@ eval("module.exports = __webpack_require__.p + \"b4afd2c1a5c8513ce721.otf\";\n\n
   \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"1e644cf5209e9064e129.png\";\n\n//# sourceURL=webpack:///./assets/img/header-min.png?");
+eval("module.exports = __webpack_require__.p + \"images/792189d7ebb75c4037cf.png\";\n\n//# sourceURL=webpack:///./assets/img/header-min.png?");
 
 /***/ })
 

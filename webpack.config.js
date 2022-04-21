@@ -9,6 +9,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'images/[hash][ext]',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -24,7 +25,7 @@ module.exports = {
       },
       {
         test: /\.(svg|jpg|png)$/,
-        use: ['file-loader'],
+        type: 'asset/resource',
       },
       {
         test: /\.(ttf|otf)$/i,
