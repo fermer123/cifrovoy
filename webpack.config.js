@@ -45,7 +45,14 @@ module.exports = {
       },
       {
         test: /\.(ttf|otf)$/i,
-        use: ['file-loader'],
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: `./fonts/[name].[ext]`,
+            },
+          },
+        ],
       },
     ],
   },
