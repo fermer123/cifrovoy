@@ -15,6 +15,14 @@ module.exports = {
     assetModuleFilename: 'img/[name][ext]', //куда и под каким названием складываю
     clean: true,
   },
+  devServer: {
+    port: 9000,
+    compress: true, //сжатие файлов в момент отображения
+    hot: true, // автоперезагрузка при изменении
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+  },
   performance: {
     //убрать уведомления
     hints: false, //указываем подсказки отключены
