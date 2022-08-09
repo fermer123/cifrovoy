@@ -12,7 +12,7 @@ module.exports = {
     //куда перекидываю файил и какое у него название
     path: path.resolve(__dirname, 'dist'),
     filename: '[name][contenthash].js',
-    assetModuleFilename: 'img/[name][ext]', //куда и под каким названием складываю
+    assetModuleFilename: 'assets/[name][ext]', //куда и под каким названием складываю
     clean: true,
   },
   devServer: {
@@ -32,7 +32,7 @@ module.exports = {
   plugins: [
     new htmlWebpackPlugin({
       title: 'Webpack',
-      filename: 'index.html',
+      filename: 'index.html', //название файла
       template: 'src/index.html',
     }),
     new CleanWebpackPlugin(),
@@ -52,7 +52,7 @@ module.exports = {
         type: 'asset/resource', //если подобный файл то изображение
       },
       {
-        test: /\.(ttf|otf)$/i,
+        test: /\.(ttf|otf)$/i, //игнорирует регистр (i)
         use: [
           {
             loader: 'file-loader',
