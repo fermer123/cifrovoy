@@ -1,11 +1,7 @@
 import React from 'react';
+import Home from './pages/Home';
 
 const App = () => {
-  return (
-    <div>
-      qwe
-      <h1>react</h1>
-    </div>
-  );
+  return <Home />;
 };
 export default App;
