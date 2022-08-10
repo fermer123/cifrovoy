@@ -18,6 +18,14 @@
   color: $color-pri;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
 body {
   background: rgb(2, 2, 26);
   min-height: 100vh;
