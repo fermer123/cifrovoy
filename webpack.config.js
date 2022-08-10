@@ -5,9 +5,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
+
   entry:
     //какие файлы выбираю из папки src и помещаю в папку dist
-    './src/index.jsx', //полный путь до папки методом path + обьединение методом resolve
+    ['@babel/polyfill', './src/index.jsx'], //полный путь до папки методом path + обьединение методом resolve
   output: {
     //куда перекидываю файил и какое у него название
     path: path.resolve(__dirname, 'dist'),
@@ -15,15 +16,25 @@ module.exports = {
     assetModuleFilename: 'assets/[name][ext]', //куда и под каким названием складываю
     clean: true,
   },
+  resolve: {
+    alias: {
+      components: path.resolve(__dirname, './src/components'),
+    },
+    extensions: ['.js', '.jsx'],
+  },
   devServer: {
     //npx webpack serve
-    port: 9000,
+    port: 3000,
     compress: true, //сжатие файлов в момент отображения
     hot: true, // автоперезагрузка при изменении
     static: {
       directory: path.join(__dirname, 'dist'),
     },
   },
+  stats: {
+    errorDetails: true,
+  },
+
   performance: {
     //убрать уведомления
     hints: false, //указываем подсказки отключены
@@ -82,7 +93,7 @@ module.exports = {
         },
       },
       {
-        test: /\.jsx$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
