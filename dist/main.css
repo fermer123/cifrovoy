@@ -390,5 +390,23 @@ body {
   margin: 0 auto;
   font-size: 18px;
 }
+/*!*******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/todo/Todo.module.scss ***!
+  \*******************************************************************************************************************************/
+.KGOIDtutaWcZnUllZScn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+/*!**********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/element/Elem.module.scss ***!
+  \**********************************************************************************************************************************/
+.gT_aik3JjsDU146s_de9 {
+  display: flex;
+  flex-direction: row;
+  border: 1px red;
+  margin-bottom: 10px;
+}
 
 /*# sourceMappingURL=main.css.map*/

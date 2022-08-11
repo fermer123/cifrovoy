@@ -1,0 +1,22 @@
+@import '../../css/variables.scss';
+
+.elem {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $color-pri-light;
+  margin-bottom: 10px;
+  padding: 10px 40px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  .title {
+    font-size: 10px;
+    max-width: 300px;
+    color: $color-sec;
+  }
+  .completed {
+    font-size: 10px;
+    justify-self: end;
+  }
+}
